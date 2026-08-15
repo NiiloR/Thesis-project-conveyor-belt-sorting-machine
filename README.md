@@ -22,7 +22,8 @@ The conveyor belt system is built around Atmel ATmega328P microcontroller operat
 
 ## Software
 
-GitHub Spec Kit AI tools were used in making of the software. 
+Important!
+GitHub Spec Kit AI tools were used in making of the software. The code was made using Spec Kit's Spec-Driven Development practices. 
 
 The operating logic of the system is based on an external interrupt from VL6180 ToF sensors window function. The sensor that is set up to point across the belt is set to activate a GPIO-pin when it detects a block in front of it. When the pin is activated, the microcontroller handles it as an interrupt routine and begins its operations. The time the block spends in front of the sensor is measured to determine the length of the block. During the time the block spends in front of the sensor the APDS9960 RGB sensor is used to take measurements of the color of the block. When the block has passed the sensor the color of the block is determined as an average of the color measurements and the length is calculated. After that, if the block is under 50 mm long and of color red, green or blue, a suitable actuation is scheduled and the block is pushed off the belt in the correct spot. All events are logged through UART and communicated to the machine's operator with general statistics and system status.
 
