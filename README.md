@@ -4,6 +4,7 @@ This repository contains the code and a showcase of the conveyor belt sorting ma
 # Video of the system at work
 The machine detects different color and length blocks that pass through its sensors and pushes them off based on their color and length. By default the machine drops off all red, green and blue blocks that are under 50 mm long at different points of the belt, and logs event data through UART connection. Other blocks are passed through the belt. The attached video demonstrates the behavior.
 
+![Machine at work](system_at_work.mp4)
 
 # Explanation of the system
 
@@ -15,6 +16,7 @@ This project played a major role in my master's thesis in technology titled Embe
 
 The conveyor belt system is built around Atmel ATmega328P microcontroller operating the motor, actuators, sensors and logging. The sensors used are Adafruit APDS9960 module for color detection and Adafruit VL6180 Time-Of-Flight module for object detection. The conveyor belt is powered by a NEMA 17 stepper motor controlled through a TB6600 stepper driver. The rods used to push off blocks from the belt are attached to three small servo motors. The system gets its power from a 24 V, 3.75 A power supply with appropriate converters to lower the voltage for each component. A picture of the wiring can be seen below.
 
+![Diagram of the wire connections of the system](wiring_diagram.png)
 
 ## Software
 
