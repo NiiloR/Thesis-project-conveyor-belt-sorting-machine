@@ -2,7 +2,7 @@
 This repository contains the code and a showcase of the conveyor belt sorting machine I designed and built as a part of my Master's thesis in Technology.  
 
 # Video of the system at work
-The machine detects different color and length blocks that pass through its sensors and pushes them off based on their color and length. By default the machine drops off all red, green and blue blocks that are under 50 mm long at different points of the belt, and logs event data through UART connection. Other blocks are passed through the belt. The attached video demonstrates the behavior.
+The machine detects different color and length blocks that pass through its sensors and pushes them off based on their color and length. By default the machine drops off all red, green and blue blocks that are under 50 mm long at different points of the belt, and logs event data through UART connection. Other blocks are passed through the belt. The video behind the link below demonstrates the behavior.
 
 ![Machine at work](system_at_work.mp4)
 
