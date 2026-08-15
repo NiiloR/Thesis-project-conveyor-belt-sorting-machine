@@ -16,7 +16,7 @@ This project played a major role in my master's thesis in technology titled Embe
 
 ## Hardware
 
-The conveyor belt system is built around Atmel ATmega328P microcontroller operating the motor, actuators, sensors and logging. The sensors used are Adafruit APDS9960 module for color detection and Adafruit VL6180 Time-Of-Flight module for object detection. The conveyor belt is powered by a NEMA 17 stepper motor controlled through a TB6600 stepper driver. The rods used to push off blocks from the belt are attached to three small servo motors. The system gets its power from a 24 V, 3.75 A power supply with appropriate converters to lower the voltage for each component. A picture of the wiring can be seen below.
+The conveyor belt system is built around Atmel ATmega328P microcontroller operating the motor, actuators, sensors and logging. The sensors used are Adafruit APDS9960 module for color detection and Adafruit VL6180 Time-Of-Flight module for object detection. The conveyor belt is powered by a NEMA 17 stepper motor controlled through a TB6600 stepper driver. The rods used to push off blocks from the belt are attached to three small servo motors. The system gets its power from a 24 V, 3.75 A power supply with appropriate converters to lower the voltage for each component. A picture of the wiring can be seen below. Even though a Arduino-based development card was used, no Arduino libraries were used and the whole software is written in C.
 
 ![Diagram of the wire connections of the system](wiring_diagram.png)
 
